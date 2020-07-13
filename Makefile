@@ -20,8 +20,8 @@ build:
 		--build-arg=OPENSIPS_MYSQL_MODULE=${OPENSIPS_MYSQL_MODULE} \
 		--build-arg=OPENSIPS_HTTP_MODULE=${OPENSIPS_HTTP_MODULE} \
 		--build-arg=OPENSIPS_DIALPLAN_MODULE=${OPENSIPS_DIALPLAN_MODULE} \
-		--tag="opensips/opensips:$(OPENSIPS_DOCKER_TAG)" \
+		--tag="gcr.io/voicereach/opensips:$(OPENSIPS_DOCKER_TAG)" \
 		.
 
 start:
-	docker run -d --name $(NAME) opensips/opensips:$(OPENSIPS_VERSION)
+	docker run -d --name $(NAME) gcr.io/voicereach/opensips:$(OPENSIPS_VERSION)
