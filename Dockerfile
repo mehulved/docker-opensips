@@ -48,7 +48,7 @@ RUN rm -rf /var/lib/apt/lists/*
 
 EXPOSE 5060/udp
 
-COPY opensips.cfg /usr/local/etc/opensips/opensips.cfg
+COPY opensips.cfg /etc/opensips/opensips.cfg
 
 COPY run.sh /run.sh
 
