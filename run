@@ -1,4 +1,4 @@
 #!/bin/bash
 docker stop opensips
 docker rm opensips
-docker run --name opensips -d -p 5060 -e DB_NAME=ls_v2 -e DB_USER=linkstreak -e DB_PASS=linkstreak gcr.io/voicereach/opensips:2.4
+docker run --name opensips -d -p 5060 -e DB_NAME=ls_v2 -e DB_USER=linkstreak -e DB_PASS=linkstreak gcr.io/voicereach/opensips:2.4-1
